@@ -20,8 +20,8 @@ public class CadastrarProdutoActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cadastrar_produto);
-        txtNome = (EditText)findViewById(R.id.txtNome);
-        txtquantidade = (EditText)findViewById(R.id.txtQuantidade);
+        txtNome = (EditText)findViewById(R.id.txtId);
+        txtquantidade = (EditText)findViewById(R.id.txtNome);
         txtValor = (EditText)findViewById(R.id.txtValor);
         btnCadastrar = (Button)findViewById(R.id.btnCadastrar);
 
