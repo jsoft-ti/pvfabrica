@@ -49,7 +49,7 @@ public class ProdutoAdapter extends BaseAdapter {
         convertView = LayoutInflater.from(context).inflate(R.layout.item_produto, null);
 
         TextView txtCodigo  = (TextView)convertView.findViewById(R.id.txtCodigo);
-        TextView txtNome  = (TextView)convertView.findViewById(R.id.txtNome);
+        TextView txtNome  = (TextView)convertView.findViewById(R.id.txtId);
         TextView txtValor = (TextView)convertView.findViewById(R.id.txtValor);
 
         txtCodigo.setText(String.valueOf(produto.getId()));
