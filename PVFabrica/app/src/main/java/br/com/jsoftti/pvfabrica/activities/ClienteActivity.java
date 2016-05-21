@@ -27,12 +27,12 @@ public class ClienteActivity extends AppCompatActivity {
     }
 
     public void CadastrarCliente (View view){
-        Cliente cliente = new Ciente();
+        Cliente cliente = new Cliente();
         Cliente.setId(0);
         Cliente.setNome(txtNome.getText().toString());
         Cliente.setRG(txtRg.getText().toString());
         new ClienteDao(this).cadastrar(cliente);
         finish();
-        
+
     }
 }
