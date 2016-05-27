@@ -10,6 +10,8 @@ import android.widget.ListView;
 import java.util.ArrayList;
 
 import br.com.jsoftti.pvfabrica.R;
+import br.com.jsoftti.pvfabrica.dao.ClienteDao;
+import br.com.jsoftti.pvfabrica.model.Cliente;
 
 public class ClienteActivity extends AppCompatActivity {
    EditText txtId, txtNome,txtRg;
@@ -26,12 +28,13 @@ public class ClienteActivity extends AppCompatActivity {
 
     }
 
-    public void CadastrarCliente (View view){
+    public void cadastrarCliente (View view){
         Cliente cliente = new Cliente();
-        Cliente.setId(0);
-        Cliente.setNome(txtNome.getText().toString());
-        Cliente.setRG(txtRg.getText().toString());
-        new ClienteDao(this).cadastrar(cliente);
+        cliente.setId(0);
+        cliente.setNome(txtNome.getText().toString());
+        cliente.setRg(txtRg.getText().toString());
+        ClienteDao dao = new ClienteDao(this);
+        dao.cadastrar(cliente);
         finish();
 
     }

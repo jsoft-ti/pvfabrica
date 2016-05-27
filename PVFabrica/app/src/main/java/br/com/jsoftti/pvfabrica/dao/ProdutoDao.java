@@ -13,7 +13,7 @@ import br.com.jsoftti.pvfabrica.model.Produto;
 
 
 public class ProdutoDao extends SQLiteOpenHelper{
-    private static final int VERSAO = 1;
+    private static final int VERSAO = 2;
     private static final String TABELA="produtos";
     private static final String BANCO="pvfabrica";
 

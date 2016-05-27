@@ -18,7 +18,8 @@
         <activity android:name=".activities.PrincipalActivity" />
         <activity android:name=".activities.ProdutosActivity" />
         <activity android:name=".activities.CadastrarProdutoActivity" />
-        <activity android:name=".activities.ClienteActivity"></activity>
+        <activity android:name=".activities.ClienteActivity" />
+        <activity android:name=".activities.ClientesActivity"></activity>
     </application>
 
 </manifest>

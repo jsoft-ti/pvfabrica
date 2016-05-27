@@ -12,6 +12,16 @@
     <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:id="@+id/btnImgClientes"
+        android:background="@drawable/cliente"
+        android:onClick="abrirActivityCliente"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:id="@+id/btnImgProdutos"
         android:layout_centerVertical="true"
         android:layout_alignParentStart="true"
@@ -19,12 +29,5 @@
         android:onClick="abrirActivityProduto"
         />
 
-    <ImageButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/btnImgClientes"
-        android:background="@drawable/cliente"
-        android:onClick="abrirActivityCliente"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true" />
+
 </RelativeLayout>
